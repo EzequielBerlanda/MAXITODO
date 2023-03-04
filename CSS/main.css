@@ -4,7 +4,8 @@
   font-family: "Oswald", sans-serif;
 }
 header {
-  height: 400px;
+  height: max-content;
+  padding-bottom: 20px;
   background: linear-gradient(
     to bottom,
     rgba(242, 159, 44, 1) 0%,
@@ -30,6 +31,38 @@ header nav ul a {
   text-decoration: none;
   color: black;
 }
+header .TitleMarca{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header .TitleMarca .MarcaUno{ 
+  display: flex;
+  flex-direction: column;
+  
+}
+header .TitleMarca .MarcaDos{
+  display: flex;
+  flex-direction: column;
+}
+header .DistOfi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+header .DistOfi p{
+  font-size: 20px;
+  align-self: center;
+}
+header .DistOfi img{
+  height: 69px;
+  width: 69px;
+}
+header .TitleMarca img{
+  height: 100px;
+  width: 100px;
+}
 header .TituloH {
   display: flex;
   flex-direction: column;
@@ -37,12 +70,18 @@ header .TituloH {
   justify-content: center;
   padding: 50px;
 }
+header .TituloH .LogoMaxitodo{
+  height: 250px;
+  width: 500px;
+}
+/*
 header .TituloH h1 {
   font-family: "Dancing Script", cursive;
   font-weight: 900;
   font-size: 100px;
   color: red;
 }
+*/
 header .ParrafosH ul {
   display: flex;
   padding: 0;
@@ -131,6 +170,7 @@ main .Ofertas .card .contenedorBoton {
 }
 .FotoCard img {
   height: 220px;
+  width: auto;
 }
 main .Barra {
   height: 20px;
@@ -141,7 +181,26 @@ main .Barra {
   header .TituloH h1 {
     font-size: 60px;
   }
-
+    header .TituloH .LogoMaxitodo{
+      height: 80px;
+      width: 160px;
+    }
+  header .DistOfi img{
+    height: 20px;
+    width: 20px;
+    justify-content: space-around;
+  }
+  header .DistOfi p{
+    font-size: 10px;
+  }
+  header .TitleMarca .MarcaUno img{
+    height: 40px;
+    width: 40px;
+  }
+  header .TitleMarca .MarcaDos img{
+    height: 40px;
+    width: 40px;
+  }
   header .ParrafosH ul li {
     padding: 8px;
     list-style-type: circle;
@@ -166,6 +225,18 @@ main .Barra {
     padding: 16px;
     /* de a 3 cards por fila hasta 1100px */
     grid-template-columns: repeat(3, 1fr);
+  }
+  header .DistOfi img {
+    height: 50px;
+    width: 50px;
+  }
+  header .TitleMarca .MarcaUno img{
+    height: 80px;
+    width: 80px;
+  }
+  header .TitleMarca .MarcaDos img{
+    height: 80px;
+    width: 80px;
   }
 }
 /* min width: minimo ancho de pantalla -- max width : maximo ancho de pantalla*/
