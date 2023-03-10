@@ -118,6 +118,74 @@ main {
         }
     }
 
+    .formContacto{
+        .tituloForm{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 30px 10px;
+            h3{
+                font-weight: 700;
+                font-size: 3vw;    
+            }
+            h4{
+                font-weight: 700;
+                font-size: 6vw;
+                color: $rojoOscuro;
+            }
+        }
+       
+
+        
+        #form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            gap: 20px;
+            .datosForm{
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+                .field{
+                    input{
+                        width: 25vw;
+                        height: 5vh;
+                        border-radius: 10px;
+                        border: solid 2px $rojoOscuro;
+                        padding-left: 10px;
+                    }
+                }
+            }
+                    .field{
+                        input{
+                            width: 53vw;
+                            height: 15vh;
+                            border-radius: 10px;
+                            border: solid 2px $rojoOscuro;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+
+                .botonIndex{
+                    input{
+                        @include boton();
+                    }
+                    input:hover{
+                        @include botonHover();
+                    }
+                }
+                }
+            
+        
+    
+
+
+
+
 
 
 
@@ -217,9 +285,10 @@ main {
                 }
             }
     }
+}
 
     
-}
+
 
 
 

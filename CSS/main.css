@@ -103,6 +103,59 @@ main .Ofertas {
       background-color: #FFFFFF;
       color: #BC0511; }
 
+main .formContacto .tituloForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 10px; }
+  main .formContacto .tituloForm h3 {
+    font-weight: 700;
+    font-size: 3vw; }
+  main .formContacto .tituloForm h4 {
+    font-weight: 700;
+    font-size: 6vw;
+    color: #BC0511; }
+
+main .formContacto #form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; }
+  main .formContacto #form .datosForm {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; }
+    main .formContacto #form .datosForm .field input {
+      width: 25vw;
+      height: 5vh;
+      border-radius: 10px;
+      border: solid 2px #BC0511;
+      padding-left: 10px; }
+  main .formContacto #form .field input {
+    width: 53vw;
+    height: 15vh;
+    border-radius: 10px;
+    border: solid 2px #BC0511;
+    padding-left: 10px; }
+
+main .formContacto .botonIndex input {
+  padding: 12px 33px;
+  font-style: normal;
+  border: solid 2px #BC0511;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #FFFFFF;
+  background: #BC0511;
+  border-radius: 10px; }
+
+main .formContacto .botonIndex input:hover {
+  background-color: #FFFFFF;
+  color: #BC0511; }
+
 main .OfertasO {
   height: max-content;
   display: grid;
