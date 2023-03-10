@@ -1,0 +1,227 @@
+$marronClaro: #DB975B;
+$marronOscuro: #C5793D;
+$rojoClaro: #C03B26;
+$rojoOscuro: #BC0511;
+
+@mixin boton {
+    padding: 12px 33px;
+    font-style: normal;
+    border: solid 2px $rojoOscuro;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: #FFFFFF;
+    background: $rojoOscuro;
+    border-radius: 10px;
+}
+@mixin botonHover{
+    background-color: #FFFFFF;
+    color: $rojoOscuro;
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+main {
+    .carouselMarcas{
+        .Slider{
+            height: 300px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            max-width: 100%;
+            
+            .slider-track{
+                animation: scroll 30s linear infinite;
+                display: flex;
+                width: calc(250px * 14);
+            }
+            .slide{
+                height: 350px;
+                width: fit-content;
+                margin-right: 2px;
+                margin-left: 2px;
+                img{
+                    width: 250px;
+                    height: auto;
+                }
+            }
+        }
+        .Slider::before, .Slider::after {
+            
+            content: "";
+            height: 100%;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+            }
+            .Slider::after{
+                right: 0;
+                top: 0;
+                transform: rotateZ(180deg);
+            }
+            .Slider::before{
+                left: 0;
+                top: 0;
+            }
+    }
+    .Ofertas{
+        padding: 60px 130px;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        .tituloOfertas{
+            h3{
+                font-weight: 400;
+                font-size: 75px;
+            }
+        }
+        .carouselOfertas{
+            .glider-contain{
+                .glider{
+                    .glider-track{
+                        gap: 30px;
+                    }
+                    .card{
+                        width: 7vw;
+                        height: 53vh;
+                        padding: 15px 55px;
+                        background: $marronOscuro;
+                        box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.25);
+                        border-radius: 30px;
+                        .cardContenido{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .botonOfertas{
+            display: flex;
+            justify-content: end;
+            a{
+                button{
+                    @include boton();
+                }
+                button:hover{
+                    @include botonHover();
+                }
+            }
+        }
+    }
+
+
+
+
+    .OfertasO{
+        
+        height: max-content;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 50px;
+        padding: 50px 133px;
+        .cardO{
+            background-color: $marronOscuro;
+            /*width: 15vw;
+            height: 20vw;*/
+            box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cardContenido{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                padding: 5px 10px;
+                    p{
+                        font-weight: 400;
+                        font-size: 26px;  
+                        color: #FFFFFF;  
+                    }
+            }    
+        }
+    }
+
+
+
+
+    .textQuienesSomos{
+        padding: 150px 87px;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+        .Familia{
+            h3{
+                font-weight: 400;
+                font-size: 60px;
+            }
+            p{
+                font-weight: 300;
+                font-size: 20px;            
+            }
+            .barrita{
+                width: 456px;
+                height: 5px;
+                background: linear-gradient(to right, #bc0511 0%, #fff 100%);
+            }
+            
+        }
+        .serParte{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            h3{
+                font-weight: 400;
+                font-size: 60px;
+            }
+            p{
+                font-weight: 300;
+                font-size: 20px;            
+            }
+            .barrita{
+                width: 620px;
+                height: 5px;
+                background: linear-gradient(to left, #bc0511 0%, #fff 100%);
+            }
+            
+        }
+    }
+    
+    .carouselEmpresa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            .titleEmpresa{
+                padding: 100px;
+                h3{
+                    font-weight: 400;
+                    font-size: 75px;
+                }
+                .barrita{
+                    width: 577px;
+                    height: 5px;
+                    background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%);
+                }
+            }
+    }
+
+    
+}
+
+
+
+
+

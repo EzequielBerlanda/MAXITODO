@@ -1,0 +1,22 @@
+$marronClaro: #DB975B;
+$marronOscuro: #C5793D;
+$rojoClaro: #C03B26;
+$rojoOscuro: #BC0511;
+
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: end;
+    padding: 19px 50px;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: $rojoOscuro;
+        }
+}

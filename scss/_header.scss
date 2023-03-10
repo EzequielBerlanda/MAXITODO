@@ -1,0 +1,24 @@
+$marronClaro: #DB975B;
+$marronOscuro: #C5793D;
+$rojoClaro: #C03B26;
+$rojoOscuro: #BC0511;
+
+
+header{
+    .Titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            img{
+                width: 50vw;
+            }
+        }
+       h2{
+        font-size: 3vw;
+        font-weight: 400;
+       } 
+    }
+}
+

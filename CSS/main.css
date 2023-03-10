@@ -1,249 +1,399 @@
+header .Titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  header .Titulo h1 img {
+    width: 50vw; }
+  header .Titulo h2 {
+    font-size: 3vw;
+    font-weight: 400; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  justify-content: end;
+  padding: 19px 50px; }
+  nav a {
+    text-decoration: none;
+    color: #fff; }
+  nav a:hover {
+    text-decoration: underline;
+    color: #BC0511; }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-250px * 7)); } }
+
+main .carouselMarcas .Slider {
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%; }
+  main .carouselMarcas .Slider .slider-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(250px * 14); }
+  main .carouselMarcas .Slider .slide {
+    height: 350px;
+    width: fit-content;
+    margin-right: 2px;
+    margin-left: 2px; }
+    main .carouselMarcas .Slider .slide img {
+      width: 250px;
+      height: auto; }
+
+main .carouselMarcas .Slider::before, main .carouselMarcas .Slider::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 200px;
+  z-index: 2; }
+
+main .carouselMarcas .Slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg); }
+
+main .carouselMarcas .Slider::before {
+  left: 0;
+  top: 0; }
+
+main .Ofertas {
+  padding: 60px 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px; }
+  main .Ofertas .tituloOfertas h3 {
+    font-weight: 400;
+    font-size: 75px; }
+  main .Ofertas .carouselOfertas .glider-contain .glider .glider-track {
+    gap: 30px; }
+  main .Ofertas .carouselOfertas .glider-contain .glider .card {
+    width: 7vw;
+    height: 53vh;
+    padding: 15px 55px;
+    background: #C5793D;
+    box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 30px; }
+    main .Ofertas .carouselOfertas .glider-contain .glider .card .cardContenido {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+  main .Ofertas .botonOfertas {
+    display: flex;
+    justify-content: end; }
+    main .Ofertas .botonOfertas a button {
+      padding: 12px 33px;
+      font-style: normal;
+      border: solid 2px #BC0511;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+      color: #FFFFFF;
+      background: #BC0511;
+      border-radius: 10px; }
+    main .Ofertas .botonOfertas a button:hover {
+      background-color: #FFFFFF;
+      color: #BC0511; }
+
+main .OfertasO {
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 50px;
+  padding: 50px 133px; }
+  main .OfertasO .cardO {
+    background-color: #C5793D;
+    /*width: 15vw;
+            height: 20vw;*/
+    box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .OfertasO .cardO .cardContenido {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 10px; }
+      main .OfertasO .cardO .cardContenido p {
+        font-weight: 400;
+        font-size: 26px;
+        color: #FFFFFF; }
+
+main .textQuienesSomos {
+  padding: 150px 87px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px; }
+  main .textQuienesSomos .Familia h3 {
+    font-weight: 400;
+    font-size: 60px; }
+  main .textQuienesSomos .Familia p {
+    font-weight: 300;
+    font-size: 20px; }
+  main .textQuienesSomos .Familia .barrita {
+    width: 456px;
+    height: 5px;
+    background: linear-gradient(to right, #bc0511 0%, #fff 100%); }
+  main .textQuienesSomos .serParte {
+    display: flex;
+    flex-direction: column;
+    align-items: end; }
+    main .textQuienesSomos .serParte h3 {
+      font-weight: 400;
+      font-size: 60px; }
+    main .textQuienesSomos .serParte p {
+      font-weight: 300;
+      font-size: 20px; }
+    main .textQuienesSomos .serParte .barrita {
+      width: 620px;
+      height: 5px;
+      background: linear-gradient(to left, #bc0511 0%, #fff 100%); }
+
+main .carouselEmpresa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .carouselEmpresa .titleEmpresa {
+    padding: 100px; }
+    main .carouselEmpresa .titleEmpresa h3 {
+      font-weight: 400;
+      font-size: 75px; }
+    main .carouselEmpresa .titleEmpresa .barrita {
+      width: 577px;
+      height: 5px;
+      background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%); }
+
+footer {
+  padding-top: 52px;
+  display: flex;
+  flex-direction: column;
+  background-color: #C5793D;
+  gap: 50px; }
+  footer .tituloFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .tituloFooter img {
+      width: 20vw; }
+  footer .contFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 174px;
+    padding-bottom: 30px; }
+    footer .contFooter img {
+      width: 3vw;
+      height: 3vw; }
+    footer .contFooter .ig {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      footer .contFooter .ig a {
+        text-decoration: none;
+        color: #fff; }
+    footer .contFooter .horario {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      footer .contFooter .horario p {
+        font-weight: 400;
+        font-size: 25px;
+        color: #fff; }
+    footer .contFooter .direccion {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      footer .contFooter .direccion a {
+        text-decoration: none;
+        color: #fff; }
+
+@media screen and (max-width: 768px) {
+  header nav {
+    padding: 15px 20px; }
+    header nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 10px; }
+  main .carouselMarcas {
+    padding-top: 50px; }
+    main .carouselMarcas .Slider {
+      height: 70px; }
+      main .carouselMarcas .Slider .slider-track .slide img {
+        width: 70px;
+        height: auto; }
+  main .Ofertas .tituloOfertas {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .Ofertas .tituloOfertas h3 {
+      font-weight: 400;
+      font-size: 45px; }
+  main .Ofertas .botonOfertas a button {
+    padding: 4px 8px;
+    font-size: 15px; }
+  main .OfertasO {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    main .OfertasO .cardO .cardContenido p {
+      font-size: 15px; }
+    main .OfertasO .cardO .cardContenido .imgCard img {
+      width: 130px;
+      height: auto; }
+  main .textQuienesSomos {
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px; }
+    main .textQuienesSomos .Familia h3 {
+      font-weight: 400;
+      font-size: 30px; }
+    main .textQuienesSomos .Familia p {
+      font-weight: 300;
+      font-size: 15px; }
+    main .textQuienesSomos .Familia .barrita {
+      width: 226px;
+      height: 5px;
+      background: linear-gradient(to right, #bc0511 0%, #fff 100%); }
+    main .textQuienesSomos .serParte {
+      display: flex;
+      flex-direction: column;
+      align-items: end; }
+      main .textQuienesSomos .serParte h3 {
+        font-weight: 400;
+        font-size: 30px; }
+      main .textQuienesSomos .serParte p {
+        font-weight: 300;
+        font-size: 15px; }
+      main .textQuienesSomos .serParte .barrita {
+        width: 310px;
+        height: 5px;
+        background: linear-gradient(to left, #bc0511 0%, #fff 100%); }
+  main .carouselEmpresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .carouselEmpresa .titleEmpresa {
+      padding: 100px; }
+      main .carouselEmpresa .titleEmpresa h3 {
+        font-weight: 400;
+        font-size: 30px; }
+      main .carouselEmpresa .titleEmpresa .barrita {
+        width: 230px;
+        height: 5px;
+        background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%); } }
+
+footer .contFooter {
+  gap: 30px; }
+  footer .contFooter .horario p {
+    font-size: 15px; }
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  header nav {
+    padding: 15px 20px; }
+    header nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 13px; }
+  main .OfertasO {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    main .OfertasO .cardO .cardContenido p {
+      font-size: 15px; }
+    main .OfertasO .cardO .cardContenido .imgCard img {
+      width: 130px;
+      height: auto; }
+  main .carouselMarcas {
+    padding-top: 50px; }
+    main .carouselMarcas .Slider {
+      height: 100px; }
+      main .carouselMarcas .Slider .slider-track .slide img {
+        width: 100px;
+        height: auto; }
+  main .textQuienesSomos {
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px; }
+    main .textQuienesSomos .Familia h3 {
+      font-weight: 400;
+      font-size: 40px; }
+    main .textQuienesSomos .Familia p {
+      font-weight: 300;
+      font-size: 18px; }
+    main .textQuienesSomos .Familia .barrita {
+      width: 305px;
+      height: 5px;
+      background: linear-gradient(to right, #bc0511 0%, #fff 100%); }
+    main .textQuienesSomos .serParte {
+      display: flex;
+      flex-direction: column;
+      align-items: end; }
+      main .textQuienesSomos .serParte h3 {
+        font-weight: 400;
+        font-size: 40px; }
+      main .textQuienesSomos .serParte p {
+        font-weight: 300;
+        font-size: 18px; }
+      main .textQuienesSomos .serParte .barrita {
+        width: 410px;
+        height: 5px;
+        background: linear-gradient(to left, #bc0511 0%, #fff 100%); }
+  main .carouselEmpresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .carouselEmpresa .titleEmpresa {
+      padding: 100px; }
+      main .carouselEmpresa .titleEmpresa h3 {
+        font-weight: 400;
+        font-size: 40px; }
+      main .carouselEmpresa .titleEmpresa .barrita {
+        width: 308px;
+        height: 5px;
+        background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%); } }
+
+@media (min-width: 1101px) and (max-width: 1400px) {
+  main .OfertasO {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    main .OfertasO .cardO .cardContenido p {
+      font-size: 15px; }
+    main .OfertasO .cardO .cardContenido .imgCard img {
+      width: 130px;
+      height: auto; }
+  main .carouselMarcas {
+    padding-top: 50px; }
+    main .carouselMarcas .Slider {
+      height: 140px; }
+      main .carouselMarcas .Slider .slider-track .slide img {
+        width: 140px;
+        height: auto; } }
+
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Oswald", sans-serif;
-}
-header {
-  height: max-content;
-  padding-bottom: 20px;
-  background: linear-gradient(
-    to bottom,
-    rgba(242, 159, 44, 1) 0%,
-    rgba(255, 201, 120, 1) 38%,
-    rgba(255, 201, 120, 1) 100%
-  );
-}
-header nav {
-  height: 50px;
-  background-color: #f29f2c;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 30px 60px;
-}
-header nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  gap: 20px;
-}
-header nav ul a {
-  text-decoration: none;
-  color: black;
-}
-header .TitleMarca{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-header .TitleMarca .MarcaUno{ 
-  display: flex;
-  flex-direction: column;
-  
-}
-header .TitleMarca .MarcaDos{
-  display: flex;
-  flex-direction: column;
-}
-header .DistOfi {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 15px;
-}
-header .DistOfi p{
-  font-size: 20px;
-  align-self: center;
-}
-header .DistOfi img{
-  height: 69px;
-  width: 69px;
-}
-header .TitleMarca img{
-  height: 100px;
-  width: 100px;
-}
-header .TituloH {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-}
-header .TituloH .LogoMaxitodo{
-  height: 250px;
-  width: 500px;
-}
-/*
-header .TituloH h1 {
-  font-family: "Dancing Script", cursive;
-  font-weight: 900;
-  font-size: 100px;
-  color: red;
-}
-*/
-header .ParrafosH ul {
-  display: flex;
-  padding: 0;
-  text-align: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
+  font-family: 'Oswald'; }
 
-.Fotos {
-  height: 500;
-}
-footer {
-  /* height: 200px; */
-  padding: 16px 8px;
-  background-color: #f29f2c;
-}
-footer .footerH {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px;
-}
-footer .BotonesFooter {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-footer .P2FooterH {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-/* OFERTAS */
-
-main .Ofertas {
-  background-color: #f29f2c;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
-  justify-items: center;
-  padding: 50px;
-}
-main .Ofertas .card {
-  background: linear-gradient(
-    to bottom,
-    rgba(242, 159, 44, 1) 0%,
-    rgba(255, 201, 120, 1) 38%,
-    rgba(255, 201, 120, 1) 100%
-  );
-  /* height: 320px; */
-  height: max-content;
-  padding: 24px 16px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  box-shadow: 11px 11px 28px rgba(0, 0, 0, 0.5);
-}
-main .Ofertas .card .FotoCard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main .Ofertas .card .TituloCard {
-  display: flex;
-  justify-content: center;
-}
-main .Ofertas .card .TituloCard p {
-  font-size: 20px;
-}
-main .Ofertas .card .PrecioCard {
-  display: flex;
-  justify-content: center;
-  padding-top: 7px;
-}
-main .Ofertas .card .PrecioCard p {
-  font-size: 20px;
-}
-main .Ofertas .card .contenedorBoton {
-  display: flex;
-  justify-content: center;
-}
-.contenedorBoton button {
-  border: solid 1px #000;
-}
-.FotoCard img {
-  height: 220px;
-  width: auto;
-}
-main .Barra {
-  height: 20px;
-  background-color: red;
-}
-
-@media screen and (max-width: 768px) {
-  header .TituloH h1 {
-    font-size: 60px;
-  }
-    header .TituloH .LogoMaxitodo{
-      height: 80px;
-      width: 160px;
-    }
-  header .DistOfi img{
-    height: 20px;
-    width: 20px;
-    justify-content: space-around;
-  }
-  header .DistOfi p{
-    font-size: 10px;
-  }
-  header .TitleMarca .MarcaUno img{
-    height: 40px;
-    width: 40px;
-  }
-  header .TitleMarca .MarcaDos img{
-    height: 40px;
-    width: 40px;
-  }
-  header .ParrafosH ul li {
-    padding: 8px;
-    list-style-type: circle;
-  }
-  main .Ofertas {
-    padding: 16px;
-    /* de a una card por fila hasta 768px */
-    grid-template-columns: repeat(1, 1fr);
-  }
-  footer .P2FooterH {
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-around;
-  }
-  footer .BotonesFooter {
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1100px) {
-  main .Ofertas {
-    padding: 16px;
-    /* de a 3 cards por fila hasta 1100px */
-    grid-template-columns: repeat(3, 1fr);
-  }
-  header .DistOfi img {
-    height: 50px;
-    width: 50px;
-  }
-  header .TitleMarca .MarcaUno img{
-    height: 80px;
-    width: 80px;
-  }
-  header .TitleMarca .MarcaDos img{
-    height: 80px;
-    width: 80px;
-  }
-}
-/* min width: minimo ancho de pantalla -- max width : maximo ancho de pantalla*/
-@media (min-width: 1101px) and (max-width: 1400px) {
-  main .Ofertas {
-    padding: 16px;
-    /* de a 4 cards por fila  hasta 1400px */
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+body {
+  background-image: url(../multimedia/backgroundDesktop.webp);
+  background-size: cover;
+  background-repeat: no-repeat; }

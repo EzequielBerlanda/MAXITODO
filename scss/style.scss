@@ -1,0 +1,20 @@
+@import 'header';
+@import 'nav';
+@import 'main';
+@import 'footer';
+@import 'responsive';
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald';
+}
+body{
+    background-image: url(../multimedia/backgroundDesktop.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

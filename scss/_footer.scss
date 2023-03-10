@@ -1,0 +1,64 @@
+$marronClaro: #DB975B;
+$marronOscuro: #C5793D;
+$rojoClaro: #C03B26;
+$rojoOscuro: #BC0511;
+
+footer{
+    padding-top: 52px;
+    display: flex;
+    flex-direction: column;
+    background-color: $marronOscuro;
+    gap: 50px;
+    
+    .tituloFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 20vw;
+        }
+    }
+    .contFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 174px;
+        padding-bottom: 30px;
+        img{
+            width: 3vw;
+            height: 3vw;
+        }
+        .ig{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+        }
+        .horario {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-weight: 400;
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+        .direccion{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+        }
+    }
+}
