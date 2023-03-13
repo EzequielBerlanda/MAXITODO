@@ -133,13 +133,17 @@ main .formContacto #form {
       height: 5vh;
       border-radius: 10px;
       border: solid 2px #BC0511;
-      padding-left: 10px; }
+      padding-left: 10px;
+      font-size: 20px; }
   main .formContacto #form .field input {
     width: 53vw;
     height: 15vh;
     border-radius: 10px;
     border: solid 2px #BC0511;
-    padding-left: 10px; }
+    padding-left: 10px;
+    font-size: 15px; }
+  main .formContacto #form .field Input::placeholder {
+    font-size: 20px; }
 
 main .formContacto .botonIndex input {
   padding: 12px 33px;
@@ -297,7 +301,7 @@ footer {
     align-items: center; }
     main .Ofertas .tituloOfertas h3 {
       font-weight: 400;
-      font-size: 45px; }
+      font-size: 30px; }
   main .Ofertas .botonOfertas a button {
     padding: 4px 8px;
     font-size: 15px; }

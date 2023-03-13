@@ -156,6 +156,7 @@ main {
                         border-radius: 10px;
                         border: solid 2px $rojoOscuro;
                         padding-left: 10px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -166,7 +167,12 @@ main {
                             border-radius: 10px;
                             border: solid 2px $rojoOscuro;
                             padding-left: 10px;
+                            font-size: 15px
                         }
+                        Input::placeholder{
+                            font-size: 20px
+                            
+                            }
                     }
                 }
 
