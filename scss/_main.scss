@@ -23,7 +23,7 @@ $rojoOscuro: #BC0511;
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 14));
     }
   }
 main {
@@ -39,15 +39,18 @@ main {
                 animation: scroll 30s linear infinite;
                 display: flex;
                 width: calc(250px * 14);
+                height: 20vh;
             }
             .slide{
-                height: 350px;
+                height: max-content;
                 width: fit-content;
                 margin-right: 2px;
                 margin-left: 2px;
+                display: flex;
+                align-self: center;
                 img{
-                    width: 250px;
-                    height: auto;
+                    width: 15vw;
+                    height: 15vw;
                 }
             }
         }

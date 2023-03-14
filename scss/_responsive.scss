@@ -3,6 +3,9 @@ $marronOscuro: #C5793D;
 $rojoClaro: #C03B26;
 $rojoOscuro: #BC0511;
 
+
+
+// mobile
 @media screen and (max-width: 768px) {
     
     header{
@@ -14,23 +17,41 @@ $rojoOscuro: #BC0511;
                 font-size: 10px;
             }
         }
+        .Titulo{
+        h1{
+            img{
+                width: 90vw;
+            }
+        }           
+        h2{
+            font-size: 9vw;
+        } 
+        }
+
     }
    main{
         .carouselMarcas{
-            padding-top: 50px;
+            padding-top: 2vh;
             .Slider{
-                height: 70px;
+                height: 25vh;
                 .slider-track{
                     .slide{
+                        height: max-content;
+                        width: fit-content;
+                        margin-right: 2px;
+                        margin-left: 2px;
+                        display: flex;
+                        align-self: center;
                         img{
-                            width: 70px;
-                            height: auto;
+                            width: 25vw;
+                            height: 25vw;
                         }
                     }
                 }
             }
         }
         .Ofertas{
+            padding: 1.78vw 2.5vw;
             .tituloOfertas{
                 display: flex;
                 justify-content: center;
@@ -38,6 +59,22 @@ $rojoOscuro: #BC0511;
                 h3{
                     font-weight: 400;
                     font-size: 30px;
+                }
+            }
+            .carouselOfertas{
+                .glider-contain{
+                    .drag{
+                        height: 50vh;
+                    }
+                    button{
+                        display: none;
+                    }
+
+                    .glider{
+                        .card{
+                            padding: 16px;
+                        }   
+                    }
                 }
             }
             .botonOfertas{
@@ -50,11 +87,54 @@ $rojoOscuro: #BC0511;
             }
         }
    
+        .formContacto{
+            .tituloForm{
+                gap:5px;
+                h3{
+                    font-size: 9vw;
+                }
+                h4{
+                    font-size: 12vw;
+                }
+            }
+            #form{
+                width: 100%;
+                gap: 15px;
+                .datosForm{
+                    gap: 5px;
+                    width: 100%;
+                    .field{
+                        width: 100%;
+                        input{
+                            width: 90%;
+                        }
+                    }
 
+                }
+                .field{
+                    width: 100%;
+                    text-align: -webkit-center;
+                    #mensaje{
+                        width: 90%;
+                    }
+                }
+            }
+            .botonIndex{
+                padding-bottom: 16px;
+                    input{
+                        padding: 4px;
+                        font-size: 8vw;
+                        width: 90vw;
+                        font-weight: 400;
+                    }
+                
+            }
+        }
 
 .OfertasO{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    padding: 16px;
     .cardO{
         .cardContenido{
             p{
@@ -75,17 +155,20 @@ $rojoOscuro: #BC0511;
 }
 
 .textQuienesSomos{
-    padding: 50px 60px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 30px;
     .Familia{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         h3{
             font-weight: 400;
             font-size: 30px;
         }
         p{
-            font-weight: 300;
+            font-weight: 400;
             font-size: 15px;            
         }
         .barrita{
@@ -98,13 +181,14 @@ $rojoOscuro: #BC0511;
     .serParte{
         display: flex;
         flex-direction: column;
-        align-items: end;
+        gap: 15px;
+        align-items: start;
         h3{
             font-weight: 400;
             font-size: 30px;
         }
         p{
-            font-weight: 300;
+            font-weight: 400;
             font-size: 15px;            
         }
         .barrita{
@@ -114,6 +198,7 @@ $rojoOscuro: #BC0511;
         }
         
     }
+
 }
 .carouselEmpresa{
     display: flex;
@@ -121,7 +206,7 @@ $rojoOscuro: #BC0511;
     justify-content: center;
     align-items: center;
         .titleEmpresa{
-            padding: 100px;
+            padding: 16px;
             h3{
                 font-weight: 400;
                 font-size: 30px;
@@ -133,40 +218,46 @@ $rojoOscuro: #BC0511;
             }
         }
 }
-
-
-
-
-   }
-
-
 }
-
 footer{
+    gap: 15px;
     .tituloFooter{
+        img{
+            width:60vw;
+        }
 
     }
     .contFooter{
-        gap: 30px;
-        .ig{
-            img{
-
-            }
-            a{
-
-            }
+        gap: 5px;
+        flex-direction: column;
+        font-size: 5vw;
+        img{
+            width: 15vw;
+            height: auto;
         }
         .horario{
-            img{
-
-            }
             p{
-                font-size: 15px;
+             font-size: 5vw;    
+             font-weight: 200;           
+            }
+
+        }
+        .direccion, .ig{
+            a{
+                font-size: 5vw;
+                font-weight: 200;
             }
         }
     }
 }
 
+}
+
+
+
+
+
+// tablet
 @media (min-width: 769px) and (max-width: 1100px) {
     header{
         nav{
@@ -177,9 +268,43 @@ footer{
                 font-size: 13px;
             }
         }
+        .Titulo{
+            h1{
+                img{
+                    width: 80vw;
+                }
+            }
+            h2{
+                font-size: 5vw;
+            }
+        }
     }
 
     main{
+    .Ofertas{
+        padding:24px;
+        .tituloOfertas{
+            h3{
+                font-size: 5vw;
+            }
+        }
+        .carouselOfertas{
+            .glider-contain{
+                .drag{
+                    height: 60vh;
+                }
+                button{
+                    display: none;
+                }
+
+                .glider{
+                    .card{
+                        padding: 16px;
+                    }   
+                }
+            }
+        }
+    }
     .OfertasO{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -204,12 +329,18 @@ footer{
     .carouselMarcas{
         padding-top: 50px;
         .Slider{
-            height: 100px;
+            height: 35vh;
             .slider-track{
                 .slide{
+                    height: max-content;
+                    width: fit-content;
+                    margin-right: 2px;
+                    margin-left: 2px;
+                    display: flex;
+                    align-self: center;
                     img{
-                        width: 100px;
-                        height: auto;
+                        width: 15vw;
+                        height: 15vw;
                     }
                 }
             }
@@ -222,6 +353,9 @@ footer{
         flex-direction: column;
         gap: 150px;
         .Familia{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             h3{
                 font-weight: 400;
                 font-size: 40px;
@@ -240,6 +374,7 @@ footer{
         .serParte{
             display: flex;
             flex-direction: column;
+            gap: 15px;
             align-items: end;
             h3{
                 font-weight: 400;
@@ -275,9 +410,53 @@ footer{
                 }
             }
     }
+    .formContacto{
+        #form{
+            width: 100%;
+            .field{
+                width: 100%;
+                text-align: -webkit-center;
+            #mensaje{
+                width: 60%;
+            }                
+            }
 
+        }
+        padding-bottom: 15px;
+    }
 
     
+}
+footer{
+    gap: 15px;
+    .tituloFooter{
+        img{
+            width:60vw;
+        }
+
+    }
+    .contFooter{
+        gap: 5px;
+        flex-direction: column;
+        font-size: 5vw;
+        img{
+            width: 9vw;
+            height: auto;
+        }
+        .horario{
+            p{
+             font-size: 4vw;    
+             font-weight: 200;           
+            }
+
+        }
+        .direccion, .ig{
+            a{
+                font-size: 4vw;
+                font-weight: 200;
+            }
+        }
+    }
 }
 }
 

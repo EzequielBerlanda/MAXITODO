@@ -27,9 +27,9 @@ new Glider(document.querySelector('.glider'), {
  
     // arrow container elements or selector
     arrows: {
-      prev: 'CSS Selector',
+      prev: 'none',
       // may also pass element directly
-      next: document.querySelector('CSS Selector')
+      next: false
     },
  
     // allow mouse dragging
@@ -71,7 +71,8 @@ new Glider(document.querySelector('.glider'), {
       breakpoint: 300,
       settings: {
           slidesToShow: 1,
-          slidesToScroll: 4
+          slidesToScroll: 4,
+          itemWidth: 200
       }
     }
     ]
