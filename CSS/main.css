@@ -2,134 +2,109 @@ header .Titulo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-header .Titulo h1 img {
-  width: 50vw;
-}
-header .Titulo h2 {
-  font-size: 3vw;
-  font-weight: 400;
-}
+  align-items: center; }
+  header .Titulo h1 img {
+    width: 50vw; }
+  header .Titulo h2 {
+    font-size: 3vw;
+    font-weight: 400; }
 
 nav {
   display: flex;
   flex-direction: row;
   gap: 2vw;
   justify-content: end;
-  padding: 19px 50px;
-}
-nav a {
-  text-decoration: none;
-  color: #fff;
-}
-nav a:hover {
-  text-decoration: underline;
-  color: #bc0511;
-}
+  padding: 19px 50px; }
+  nav a {
+    text-decoration: none;
+    color: #fff; }
+  nav a:hover {
+    text-decoration: underline;
+    color: #BC0511; }
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
-  }
+    transform: translateX(0); }
   100% {
-    transform: translateX(calc(-250px * 14));
-  }
-}
+    transform: translateX(calc(-250px * 14)); } }
 
 main .carouselMarcas .Slider {
   height: 300px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  max-width: 100%;
-}
-main .carouselMarcas .Slider .slider-track {
-  animation: scroll 30s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
-  height: 20vh;
-}
-main .carouselMarcas .Slider .slide {
-  height: max-content;
-  width: fit-content;
-  margin-right: 2px;
-  margin-left: 2px;
-  display: flex;
-  align-self: center;
-}
-main .carouselMarcas .Slider .slide img {
-  width: 15vw;
-  height: 15vw;
-}
+  max-width: 100%; }
+  main .carouselMarcas .Slider .slider-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+    height: 20vh; }
+  main .carouselMarcas .Slider .slide {
+    height: max-content;
+    width: fit-content;
+    margin-right: 2px;
+    margin-left: 2px;
+    display: flex;
+    align-self: center; }
+    main .carouselMarcas .Slider .slide img {
+      width: 15vw;
+      height: 15vw; }
 
-main .carouselMarcas .Slider::before,
-main .carouselMarcas .Slider::after {
+main .carouselMarcas .Slider::before, main .carouselMarcas .Slider::after {
   content: "";
   height: 100%;
   position: absolute;
   width: 200px;
-  z-index: 2;
-}
+  z-index: 2; }
 
 main .carouselMarcas .Slider::after {
   right: 0;
   top: 0;
-  transform: rotateZ(180deg);
-}
+  transform: rotateZ(180deg); }
 
 main .carouselMarcas .Slider::before {
   left: 0;
-  top: 0;
-}
+  top: 0; }
 
 main .Ofertas {
   padding: 60px 130px;
   display: flex;
   flex-direction: column;
-  gap: 45px;
-}
-main .Ofertas .tituloOfertas h3 {
-  font-weight: 400;
-  font-size: 75px;
-}
-main .Ofertas .carouselOfertas .glider-contain .glider .glider-track {
-  gap: 30px;
-}
-main .Ofertas .carouselOfertas .glider-contain .glider .card {
-  width: 7vw;
-  height: 53vh;
-  padding: 15px 55px;
-  background: #c5793d;
-  box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-}
-main .Ofertas .carouselOfertas .glider-contain .glider .card .cardContenido {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-main .Ofertas .botonOfertas {
-  display: flex;
-  justify-content: end;
-}
-main .Ofertas .botonOfertas a button {
-  padding: 12px 33px;
-  font-style: normal;
-  border: solid 2px #bc0511;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 44px;
-  color: #ffffff;
-  background: #bc0511;
-  border-radius: 10px;
-}
-main .Ofertas .botonOfertas a button:hover {
-  background-color: #ffffff;
-  color: #bc0511;
-}
+  gap: 45px; }
+  main .Ofertas .tituloOfertas h3 {
+    font-weight: 400;
+    font-size: 75px; }
+  main .Ofertas .carouselOfertas .glider-contain .glider .glider-track {
+    gap: 30px; }
+  main .Ofertas .carouselOfertas .glider-contain .glider .card {
+    width: 7vw;
+    height: 53vh;
+    padding: 15px 55px;
+    background: #C5793D;
+    box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 30px; }
+    main .Ofertas .carouselOfertas .glider-contain .glider .card .cardContenido {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+  main .Ofertas .botonOfertas {
+    display: flex;
+    justify-content: end; }
+    main .Ofertas .botonOfertas a button {
+      padding: 12px 33px;
+      font-style: normal;
+      border: solid 2px #BC0511;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+      color: #FFFFFF;
+      background: #BC0511;
+      border-radius: 10px; }
+    main .Ofertas .botonOfertas a button:hover {
+      background-color: #FFFFFF;
+      color: #BC0511; }
 
 main .formContacto .tituloForm {
   display: flex;
@@ -137,66 +112,56 @@ main .formContacto .tituloForm {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 30px 10px;
-}
-main .formContacto .tituloForm h3 {
-  font-weight: 700;
-  font-size: 3vw;
-}
-main .formContacto .tituloForm h4 {
-  font-weight: 700;
-  font-size: 6vw;
-  color: #bc0511;
-}
+  padding: 30px 10px; }
+  main .formContacto .tituloForm h3 {
+    font-weight: 700;
+    font-size: 3vw; }
+  main .formContacto .tituloForm h4 {
+    font-weight: 700;
+    font-size: 6vw;
+    color: #BC0511; }
 
 main .formContacto #form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-}
-main .formContacto #form .datosForm {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-main .formContacto #form .datosForm .field input {
-  width: 25vw;
-  height: 5vh;
-  border-radius: 10px;
-  border: solid 2px #bc0511;
-  padding-left: 10px;
-  font-size: 20px;
-}
-main .formContacto #form .field input {
-  width: 53vw;
-  height: 15vh;
-  border-radius: 10px;
-  border: solid 2px #bc0511;
-  padding-left: 10px;
-  font-size: 15px;
-}
-main .formContacto #form .field Input::placeholder {
-  font-size: 20px;
-}
+  gap: 20px; }
+  main .formContacto #form .datosForm {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; }
+    main .formContacto #form .datosForm .field input {
+      width: 25vw;
+      height: 5vh;
+      border-radius: 10px;
+      border: solid 2px #BC0511;
+      padding-left: 10px;
+      font-size: 20px; }
+  main .formContacto #form .field input {
+    width: 53vw;
+    height: 15vh;
+    border-radius: 10px;
+    border: solid 2px #BC0511;
+    padding-left: 10px;
+    font-size: 15px; }
+  main .formContacto #form .field Input::placeholder {
+    font-size: 20px; }
 
 main .formContacto .botonIndex input {
   padding: 12px 33px;
   font-style: normal;
-  border: solid 2px #bc0511;
+  border: solid 2px #BC0511;
   font-weight: 400;
   font-size: 30px;
   line-height: 44px;
-  color: #ffffff;
-  background: #bc0511;
-  border-radius: 10px;
-}
+  color: #FFFFFF;
+  background: #BC0511;
+  border-radius: 10px; }
 
 main .formContacto .botonIndex input:hover {
-  background-color: #ffffff;
-  color: #bc0511;
-}
+  background-color: #FFFFFF;
+  color: #BC0511; }
 
 main .OfertasO {
   height: max-content;
@@ -204,637 +169,416 @@ main .OfertasO {
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   gap: 50px;
-  padding: 50px 133px;
-}
-main .OfertasO .cardO {
-  background-color: #c5793d;
-  /*width: 15vw;
+  padding: 50px 133px; }
+  main .OfertasO .cardO {
+    background-color: #C5793D;
+    /*width: 15vw;
             height: 20vw;*/
-  box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main .OfertasO .cardO .cardContenido {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  padding: 5px 10px;
-}
-main .OfertasO .cardO .cardContenido p {
-  font-weight: 400;
-  font-size: 26px;
-  color: #ffffff;
-}
+    box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .OfertasO .cardO .cardContenido {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 10px; }
+      main .OfertasO .cardO .cardContenido p {
+        font-weight: 400;
+        font-size: 26px;
+        color: #FFFFFF; }
+      main .OfertasO .cardO .cardContenido .imgCard img {
+        width: 12vw;
+        height: auto; }
 
 main .textQuienesSomos {
   padding: 150px 87px;
   display: flex;
   flex-direction: column;
-  gap: 150px;
-}
-main .textQuienesSomos .Familia h3 {
-  font-weight: 400;
-  font-size: 60px;
-}
-main .textQuienesSomos .Familia p {
-  font-weight: 300;
-  font-size: 20px;
-}
-main .textQuienesSomos .Familia .barrita {
-  width: 456px;
-  height: 5px;
-  background: linear-gradient(to right, #bc0511 0%, #fff 100%);
-}
-main .textQuienesSomos .serParte {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-main .textQuienesSomos .serParte h3 {
-  font-weight: 400;
-  font-size: 60px;
-}
-main .textQuienesSomos .serParte p {
-  font-weight: 300;
-  font-size: 20px;
-}
-main .textQuienesSomos .serParte .barrita {
-  width: 620px;
-  height: 5px;
-  background: linear-gradient(to left, #bc0511 0%, #fff 100%);
-}
+  gap: 150px; }
+  main .textQuienesSomos .Familia h3 {
+    font-weight: 400;
+    font-size: 60px; }
+  main .textQuienesSomos .Familia p {
+    font-weight: 300;
+    font-size: 20px; }
+  main .textQuienesSomos .Familia .barrita {
+    width: 456px;
+    height: 5px;
+    background: linear-gradient(to right, #bc0511 0%, #fff 100%); }
+  main .textQuienesSomos .serParte {
+    display: flex;
+    flex-direction: column;
+    align-items: end; }
+    main .textQuienesSomos .serParte h3 {
+      font-weight: 400;
+      font-size: 60px; }
+    main .textQuienesSomos .serParte p {
+      font-weight: 300;
+      font-size: 20px; }
+    main .textQuienesSomos .serParte .barrita {
+      width: 620px;
+      height: 5px;
+      background: linear-gradient(to left, #bc0511 0%, #fff 100%); }
 
 main .carouselEmpresa {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-main .carouselEmpresa .titleEmpresa {
-  padding: 100px;
-}
-main .carouselEmpresa .titleEmpresa h3 {
-  font-weight: 400;
-  font-size: 75px;
-}
-main .carouselEmpresa .titleEmpresa .barrita {
-  width: 577px;
-  height: 5px;
-  background: linear-gradient(to left, #ffffff 0%, #bc0511 100%, #fff 0%);
-}
+  align-items: center; }
+  main .carouselEmpresa .titleEmpresa {
+    padding: 100px; }
+    main .carouselEmpresa .titleEmpresa h3 {
+      font-weight: 400;
+      font-size: 75px; }
+    main .carouselEmpresa .titleEmpresa .barrita {
+      width: 577px;
+      height: 5px;
+      background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%); }
 
 footer {
   padding-top: 52px;
   display: flex;
   flex-direction: column;
-  background-color: #c5793d;
-  gap: 50px;
-}
-footer .tituloFooter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .tituloFooter img {
-  width: 20vw;
-}
-footer .contFooter {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 174px;
-  padding-bottom: 30px;
-}
-footer .contFooter img {
-  width: 3vw;
-  height: 3vw;
-}
-footer .contFooter .ig {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-footer .contFooter .ig a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 400;
-  font-size: 25px;
-}
-footer .contFooter .horario {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-footer .contFooter .horario p {
-  font-weight: 400;
-  font-size: 25px;
-  color: #fff;
-}
-footer .contFooter .direccion {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-footer .contFooter .direccion a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 400;
-  font-size: 25px;
-}
+  background-color: #C5793D;
+  gap: 50px; }
+  footer .tituloFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .tituloFooter img {
+      width: 20vw; }
+  footer .contFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 174px;
+    padding-bottom: 30px; }
+    footer .contFooter img {
+      width: 3vw;
+      height: 3vw; }
+    footer .contFooter .ig {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      footer .contFooter .ig a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        font-size: 25px; }
+    footer .contFooter .horario {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      footer .contFooter .horario p {
+        font-weight: 400;
+        font-size: 25px;
+        color: #fff; }
+    footer .contFooter .direccion {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      footer .contFooter .direccion a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        font-size: 25px; }
 
 @media screen and (max-width: 768px) {
   header nav {
-    padding: 15px 20px;
-  }
-  header nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 10px;
-  }
+    padding: 15px 20px; }
+    header nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 10px; }
   header .Titulo h1 img {
-    width: 90vw;
-  }
+    width: 90vw; }
   header .Titulo h2 {
-    font-size: 9vw;
-  }
+    font-size: 9vw; }
   main .carouselMarcas {
-    padding-top: 2vh;
-  }
-  main .carouselMarcas .Slider {
-    height: 25vh;
-  }
-  main .carouselMarcas .Slider .slider-track .slide {
-    height: max-content;
-    width: fit-content;
-    margin-right: 2px;
-    margin-left: 2px;
-    display: flex;
-    align-self: center;
-  }
-  main .carouselMarcas .Slider .slider-track .slide img {
-    width: 25vw;
-    height: 25vw;
-  }
+    padding-top: 2vh; }
+    main .carouselMarcas .Slider {
+      height: 25vh; }
+      main .carouselMarcas .Slider .slider-track .slide {
+        height: max-content;
+        width: fit-content;
+        margin-right: 2px;
+        margin-left: 2px;
+        display: flex;
+        align-self: center; }
+        main .carouselMarcas .Slider .slider-track .slide img {
+          width: 25vw;
+          height: 25vw; }
   main .Ofertas {
-    padding: 1.78vw 2.5vw;
-  }
-  main .Ofertas .tituloOfertas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  main .Ofertas .tituloOfertas h3 {
-    font-weight: 400;
-    font-size: 30px;
-  }
-  main .Ofertas .carouselOfertas .glider-contain .drag {
-    height: 50vh;
-  }
-  main .Ofertas .carouselOfertas .glider-contain button {
-    display: none;
-  }
-  main .Ofertas .carouselOfertas .glider-contain .glider .card {
-    padding: 16px;
-  }
-  main .Ofertas .botonOfertas a button {
-    padding: 4px 8px;
-    font-size: 15px;
-  }
+    padding: 1.78vw 2.5vw; }
+    main .Ofertas .tituloOfertas {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .Ofertas .tituloOfertas h3 {
+        font-weight: 400;
+        font-size: 30px; }
+    main .Ofertas .carouselOfertas .glider-contain .drag {
+      height: 50vh; }
+    main .Ofertas .carouselOfertas .glider-contain button {
+      display: none; }
+    main .Ofertas .carouselOfertas .glider-contain .glider .card {
+      padding: 16px; }
+    main .Ofertas .botonOfertas a button {
+      padding: 4px 8px;
+      font-size: 15px; }
   main .formContacto .tituloForm {
-    gap: 5px;
-  }
-  main .formContacto .tituloForm h3 {
-    font-size: 9vw;
-  }
-  main .formContacto .tituloForm h4 {
-    font-size: 12vw;
-  }
+    gap: 5px; }
+    main .formContacto .tituloForm h3 {
+      font-size: 9vw; }
+    main .formContacto .tituloForm h4 {
+      font-size: 12vw; }
   main .formContacto #form {
     width: 100%;
-    gap: 15px;
-  }
-  main .formContacto #form .datosForm {
-    gap: 5px;
-    width: 100%;
-  }
-  main .formContacto #form .datosForm .field {
-    width: 100%;
-  }
-  main .formContacto #form .datosForm .field input {
-    width: 90%;
-  }
-  main .formContacto #form .field {
-    width: 100%;
-    text-align: -webkit-center;
-  }
-  main .formContacto #form .field #mensaje {
-    width: 90%;
-  }
+    gap: 15px; }
+    main .formContacto #form .datosForm {
+      gap: 5px;
+      width: 100%; }
+      main .formContacto #form .datosForm .field {
+        width: 100%; }
+        main .formContacto #form .datosForm .field input {
+          width: 90%; }
+    main .formContacto #form .field {
+      width: 100%;
+      text-align: -webkit-center; }
+      main .formContacto #form .field #mensaje {
+        width: 90%; }
   main .formContacto .botonIndex {
-    padding-bottom: 16px;
-  }
-  main .formContacto .botonIndex input {
-    padding: 4px;
-    font-size: 8vw;
-    width: 90vw;
-    font-weight: 400;
-  }
+    padding-bottom: 16px; }
+    main .formContacto .botonIndex input {
+      padding: 4px;
+      font-size: 8vw;
+      width: 90vw;
+      font-weight: 400; }
   main .OfertasO {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding: 16px;
-  }
-  main .OfertasO .cardO .cardContenido p {
-    font-size: 15px;
-  }
-  main .OfertasO .cardO .cardContenido .imgCard img {
-    width: 130px;
-    height: auto;
-  }
+    padding: 16px; }
+    main .OfertasO .cardO .cardContenido p {
+      font-size: 15px; }
+    main .OfertasO .cardO .cardContenido .imgCard img {
+      width: 130px;
+      height: auto; }
   main .textQuienesSomos {
     padding: 16px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-  }
-  main .textQuienesSomos .Familia {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  main .textQuienesSomos .Familia h3 {
-    font-weight: 400;
-    font-size: 30px;
-  }
-  main .textQuienesSomos .Familia p {
-    font-weight: 400;
-    font-size: 15px;
-  }
-  main .textQuienesSomos .Familia .barrita {
-    width: 226px;
-    height: 5px;
-    background: linear-gradient(to right, #bc0511 0%, #fff 100%);
-  }
-  main .textQuienesSomos .serParte {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: start;
-  }
-  main .textQuienesSomos .serParte h3 {
-    font-weight: 400;
-    font-size: 30px;
-  }
-  main .textQuienesSomos .serParte p {
-    font-weight: 400;
-    font-size: 15px;
-  }
-  main .textQuienesSomos .serParte .barrita {
-    width: 310px;
-    height: 5px;
-    background: linear-gradient(to left, #bc0511 0%, #fff 100%);
-  }
+    gap: 30px; }
+    main .textQuienesSomos .Familia {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; }
+      main .textQuienesSomos .Familia h3 {
+        font-weight: 400;
+        font-size: 30px; }
+      main .textQuienesSomos .Familia p {
+        font-weight: 400;
+        font-size: 15px; }
+      main .textQuienesSomos .Familia .barrita {
+        width: 226px;
+        height: 5px;
+        background: linear-gradient(to right, #bc0511 0%, #fff 100%); }
+    main .textQuienesSomos .serParte {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: start; }
+      main .textQuienesSomos .serParte h3 {
+        font-weight: 400;
+        font-size: 30px; }
+      main .textQuienesSomos .serParte p {
+        font-weight: 400;
+        font-size: 15px; }
+      main .textQuienesSomos .serParte .barrita {
+        width: 310px;
+        height: 5px;
+        background: linear-gradient(to left, #bc0511 0%, #fff 100%); }
   main .carouselEmpresa {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-  main .carouselEmpresa .titleEmpresa {
-    padding: 16px;
-  }
-  main .carouselEmpresa .titleEmpresa h3 {
-    font-weight: 400;
-    font-size: 30px;
-  }
-  main .carouselEmpresa .titleEmpresa .barrita {
-    width: 230px;
-    height: 5px;
-    background: linear-gradient(to left, #ffffff 0%, #bc0511 100%, #fff 0%);
-  }
+    align-items: center; }
+    main .carouselEmpresa .titleEmpresa {
+      padding: 16px; }
+      main .carouselEmpresa .titleEmpresa h3 {
+        font-weight: 400;
+        font-size: 30px; }
+      main .carouselEmpresa .titleEmpresa .barrita {
+        width: 230px;
+        height: 5px;
+        background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%); }
   footer {
-    gap: 15px;
-  }
-  footer .tituloFooter img {
-    width: 60vw;
-  }
-  footer .contFooter {
-    gap: 5px;
-    flex-direction: column;
-    font-size: 5vw;
-  }
-  footer .contFooter img {
-    width: 15vw;
-    height: auto;
-  }
-  footer .contFooter .horario p {
-    font-size: 5vw;
-    font-weight: 200;
-  }
-  footer .contFooter .direccion a,
-  footer .contFooter .ig a {
-    font-size: 5vw;
-    font-weight: 200;
-  }
-}
+    gap: 15px; }
+    footer .tituloFooter img {
+      width: 60vw; }
+    footer .contFooter {
+      gap: 5px;
+      flex-direction: column;
+      font-size: 5vw; }
+      footer .contFooter img {
+        width: 15vw;
+        height: auto; }
+      footer .contFooter .horario p {
+        font-size: 5vw;
+        font-weight: 200; }
+      footer .contFooter .direccion a, footer .contFooter .ig a {
+        font-size: 5vw;
+        font-weight: 200; } }
 
 @media (min-width: 769px) and (max-width: 1100px) {
   header nav {
-    padding: 15px 20px;
-  }
-  header nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 13px;
-  }
+    padding: 15px 20px; }
+    header nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 13px; }
   header .Titulo h1 img {
-    width: 80vw;
-  }
+    width: 80vw; }
   header .Titulo h2 {
-    font-size: 5vw;
-  }
+    font-size: 5vw; }
   main .Ofertas {
-    padding: 24px;
-  }
-  main .Ofertas .tituloOfertas h3 {
-    font-size: 5vw;
-  }
-  main .Ofertas .carouselOfertas .glider-contain .drag {
-    height: 60vh;
-  }
-  main .Ofertas .carouselOfertas .glider-contain button {
-    display: none;
-  }
-  main .Ofertas .carouselOfertas .glider-contain .glider .card {
-    padding: 16px;
-  }
+    padding: 24px; }
+    main .Ofertas .tituloOfertas h3 {
+      font-size: 5vw; }
+    main .Ofertas .carouselOfertas .glider-contain .drag {
+      height: 60vh; }
+    main .Ofertas .carouselOfertas .glider-contain button {
+      display: none; }
+    main .Ofertas .carouselOfertas .glider-contain .glider .card {
+      padding: 16px; }
   main .OfertasO {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  main .OfertasO .cardO .cardContenido p {
-    font-size: 15px;
-  }
-  main .OfertasO .cardO .cardContenido .imgCard img {
-    width: 130px;
-    height: auto;
-  }
+    grid-template-columns: repeat(3, 1fr); }
+    main .OfertasO .cardO .cardContenido p {
+      font-size: 15px; }
+    main .OfertasO .cardO .cardContenido .imgCard img {
+      width: 130px;
+      height: auto; }
   main .carouselMarcas {
-    padding-top: 50px;
-  }
-  main .carouselMarcas .Slider {
-    height: 35vh;
-  }
-  main .carouselMarcas .Slider .slider-track .slide {
-    height: max-content;
-    width: fit-content;
-    margin-right: 2px;
-    margin-left: 2px;
-    display: flex;
-    align-self: center;
-  }
-  main .carouselMarcas .Slider .slider-track .slide img {
-    width: 15vw;
-    height: 15vw;
-  }
+    padding-top: 50px; }
+    main .carouselMarcas .Slider {
+      height: 35vh; }
+      main .carouselMarcas .Slider .slider-track .slide {
+        height: max-content;
+        width: fit-content;
+        margin-right: 2px;
+        margin-left: 2px;
+        display: flex;
+        align-self: center; }
+        main .carouselMarcas .Slider .slider-track .slide img {
+          width: 15vw;
+          height: 15vw; }
   main .textQuienesSomos {
     padding: 50px 60px;
     display: flex;
     flex-direction: column;
-    gap: 150px;
-  }
-  main .textQuienesSomos .Familia {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  main .textQuienesSomos .Familia h3 {
-    font-weight: 400;
-    font-size: 40px;
-  }
-  main .textQuienesSomos .Familia p {
-    font-weight: 300;
-    font-size: 18px;
-  }
-  main .textQuienesSomos .Familia .barrita {
-    width: 305px;
-    height: 5px;
-    background: linear-gradient(to right, #bc0511 0%, #fff 100%);
-  }
-  main .textQuienesSomos .serParte {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: end;
-  }
-  main .textQuienesSomos .serParte h3 {
-    font-weight: 400;
-    font-size: 40px;
-  }
-  main .textQuienesSomos .serParte p {
-    font-weight: 300;
-    font-size: 18px;
-  }
-  main .textQuienesSomos .serParte .barrita {
-    width: 410px;
-    height: 5px;
-    background: linear-gradient(to left, #bc0511 0%, #fff 100%);
-  }
+    gap: 150px; }
+    main .textQuienesSomos .Familia {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; }
+      main .textQuienesSomos .Familia h3 {
+        font-weight: 400;
+        font-size: 40px; }
+      main .textQuienesSomos .Familia p {
+        font-weight: 300;
+        font-size: 18px; }
+      main .textQuienesSomos .Familia .barrita {
+        width: 305px;
+        height: 5px;
+        background: linear-gradient(to right, #bc0511 0%, #fff 100%); }
+    main .textQuienesSomos .serParte {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: end; }
+      main .textQuienesSomos .serParte h3 {
+        font-weight: 400;
+        font-size: 40px; }
+      main .textQuienesSomos .serParte p {
+        font-weight: 300;
+        font-size: 18px; }
+      main .textQuienesSomos .serParte .barrita {
+        width: 410px;
+        height: 5px;
+        background: linear-gradient(to left, #bc0511 0%, #fff 100%); }
   main .carouselEmpresa {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-  main .carouselEmpresa .titleEmpresa {
-    padding: 100px;
-  }
-  main .carouselEmpresa .titleEmpresa h3 {
-    font-weight: 400;
-    font-size: 40px;
-  }
-  main .carouselEmpresa .titleEmpresa .barrita {
-    width: 308px;
-    height: 5px;
-    background: linear-gradient(to left, #ffffff 0%, #bc0511 100%, #fff 0%);
-  }
+    align-items: center; }
+    main .carouselEmpresa .titleEmpresa {
+      padding: 100px; }
+      main .carouselEmpresa .titleEmpresa h3 {
+        font-weight: 400;
+        font-size: 40px; }
+      main .carouselEmpresa .titleEmpresa .barrita {
+        width: 308px;
+        height: 5px;
+        background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%); }
   main .formContacto {
-    padding-bottom: 15px;
-  }
-  main .formContacto #form {
-    width: 100%;
-  }
-  main .formContacto #form .field {
-    width: 100%;
-    text-align: -webkit-center;
-  }
-  main .formContacto #form .field #mensaje {
-    width: 60%;
-  }
+    padding-bottom: 15px; }
+    main .formContacto #form {
+      width: 100%; }
+      main .formContacto #form .field {
+        width: 100%;
+        text-align: -webkit-center; }
+        main .formContacto #form .field #mensaje {
+          width: 60%; }
   footer {
-    gap: 15px;
-  }
-  footer .tituloFooter img {
-    width: 60vw;
-  }
-  footer .contFooter {
-    gap: 5px;
-    flex-direction: column;
-    font-size: 5vw;
-  }
-  footer .contFooter img {
-    width: 9vw;
-    height: auto;
-  }
-  footer .contFooter .horario p {
-    font-size: 4vw;
-    font-weight: 200;
-  }
-  footer .contFooter .direccion a,
-  footer .contFooter .ig a {
-    font-size: 4vw;
-    font-weight: 200;
-  }
-}
+    gap: 15px; }
+    footer .tituloFooter img {
+      width: 60vw; }
+    footer .contFooter {
+      gap: 5px;
+      flex-direction: column;
+      font-size: 5vw; }
+      footer .contFooter img {
+        width: 9vw;
+        height: auto; }
+      footer .contFooter .horario p {
+        font-size: 4vw;
+        font-weight: 200; }
+      footer .contFooter .direccion a, footer .contFooter .ig a {
+        font-size: 4vw;
+        font-weight: 200; } }
 
 @media (min-width: 1101px) and (max-width: 1400px) {
   main .OfertasO {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  main .OfertasO .cardO .cardContenido p {
-    font-size: 15px;
-  }
-  main .OfertasO .cardO .cardContenido .imgCard img {
-    width: 130px;
-    height: auto;
-  }
+    grid-template-columns: repeat(4, 1fr); }
+    main .OfertasO .cardO .cardContenido p {
+      font-size: 15px; }
+    main .OfertasO .cardO .cardContenido .imgCard img {
+      width: 130px;
+      height: auto; }
   main .carouselMarcas {
-    padding-top: 50px;
-  }
-  main .carouselMarcas .Slider {
-    height: 140px;
-  }
-  main .carouselMarcas .Slider .slider-track .slide img {
-    width: 140px;
-    height: auto;
-  }
-}
+    padding-top: 50px; }
+    main .carouselMarcas .Slider {
+      height: 140px; }
+      main .carouselMarcas .Slider .slider-track .slide img {
+        width: 140px;
+        height: auto; } }
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Oswald";
-}
+  font-family: 'Oswald'; }
 
 body {
   background-image: url(../multimedia/backgroundDesktop.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-x: hidden;
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-li {
-  list-style: none;
-}
-ul {
-  margin-bottom: 0;
-}
-
-.tour__gallery {
-  margin: 20px auto;
-  max-width: 800px;
-  height: 350px;
-  overflow: hidden;
-  position: relative;
-}
-.picture__slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  height: 100%;
-  width: 500%;
-}
-.carousel__image {
-  list-style: none;
-  flex-shrink: 0;
-  flex-basis: 20%;
-  height: 100%;
-  padding-bottom: 0;
-  background-color: #ebeced;
-}
-.carousel__image img {
-  min-width: 100%;
-  height: 350px;
-  object-fit: cover;
-  display: block;
-  background-color: #ebeced;
-}
-
-.controls .btn--next {
-  margin-top: 0;
-  padding: 10px;
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  color: #fbf9f9;
-  font-size: 24px;
-}
-.controls .btn--prev {
-  margin-top: 0;
-  padding: 10px;
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  color: #fbf9f9;
-  font-size: 24px;
-}
-.controls button:hover {
-  background: #7b666663;
-}
-.controls .flecha {
-  height: 25px;
-}
-
-.is-hidden {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .tour__gallery {
-    float: none;
-    width: 100%;
-  }
-  .tour__gallery {
-    min-height: 300px;
-    max-height: 300px;
-  }
-  .tour__gallery img {
-    height: 300px;
-  }
-  .controls .btn--next,
-  .controls .btn--prev {
-    background: #7b666663 !important;
-  }
-}
+  overflow-x: hidden; }

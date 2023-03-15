@@ -198,5 +198,13 @@
     "yargs": "^17.7.1",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EzequielBerlanda/MAXITODO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EzequielBerlanda/MAXITODO/issues"
+  },
+  "homepage": "https://github.com/EzequielBerlanda/MAXITODO#readme",
   "description": ""
 }
