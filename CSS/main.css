@@ -318,7 +318,6 @@ footer .contFooter .ig {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 footer .contFooter .ig a {
   text-decoration: none;
@@ -330,7 +329,6 @@ footer .contFooter .horario {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 footer .contFooter .horario p {
   font-weight: 400;
@@ -341,7 +339,6 @@ footer .contFooter .direccion {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 footer .contFooter .direccion a {
   text-decoration: none;
