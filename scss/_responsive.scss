@@ -217,6 +217,16 @@ $rojoOscuro: #BC0511;
                 background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%);
             }
         }
+        .carousel{
+            max-width: 100%;
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
 }
 }
 footer{
@@ -407,6 +417,16 @@ footer{
                     width: 308px;
                     height: 5px;
                     background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%);
+                }
+            }
+            .carousel{
+                max-width: 100%;
+                .carousel-inner{
+                    .carousel-item{
+                        img{
+                            max-width: 100%;
+                        }
+                    }
                 }
             }
     }

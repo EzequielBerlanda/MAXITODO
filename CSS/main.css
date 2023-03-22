@@ -419,6 +419,10 @@ footer {
         width: 230px;
         height: 5px;
         background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%); }
+    main .carouselEmpresa .carousel {
+      max-width: 100%; }
+      main .carouselEmpresa .carousel .carousel-inner .carousel-item img {
+        max-width: 100%; }
   footer {
     gap: 15px; }
     footer .tituloFooter img {
@@ -528,6 +532,10 @@ footer {
         width: 308px;
         height: 5px;
         background: linear-gradient(to left, #FFFFFF 0%, #bc0511 100%, #fff 0%); }
+    main .carouselEmpresa .carousel {
+      max-width: 100%; }
+      main .carouselEmpresa .carousel .carousel-inner .carousel-item img {
+        max-width: 100%; }
   main .formContacto {
     padding-bottom: 15px; }
     main .formContacto #form {
@@ -582,16 +590,3 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden; }
-  .buttonWhatsapp {
-    background-image: url(../multimedia/iconoWhatsapp.webp);
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    left: 85%;
-    background-size: cover;
-    top: 25%;
-    z-index: 10;
-  }
-  .buttonWhatsapp {
-    cursor: pointer;
-  }
