@@ -8,17 +8,6 @@ header .Titulo {
   header .Titulo h2 {
     font-size: 3vw;
     font-weight: 400; }
-    
-    .buttonWhatsapp{
-      display: flex;
-    justify-content: end;
-    padding-right: 40px;
-    position: fixed;
-    }
-    .buttonWhatsapp img{
-      height: 100px;
-      width: auto;
-    }
 
 nav {
   display: flex;
