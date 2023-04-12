@@ -9,6 +9,16 @@ header .Titulo {
     font-size: 3vw;
     font-weight: 400; }
 
+
+
+.buttonWhatsapp img{
+  height: 100px;
+  width: auto;
+  position: fixed;
+}
+
+
+
 nav {
   display: flex;
   flex-direction: row;
