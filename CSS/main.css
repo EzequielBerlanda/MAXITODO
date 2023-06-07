@@ -9,15 +9,11 @@ header .Titulo {
     font-size: 3vw;
     font-weight: 400; }
 
-
-
-.buttonWhatsapp img{
-  height: 100px;
-  width: auto;
-  position: fixed;
-}
-
-
+header a .buttonWhatsapp {
+  position: fixed; }
+  header a .buttonWhatsapp img {
+    width: 100px;
+    height: auto; }
 
 nav {
   display: flex;
@@ -99,6 +95,9 @@ main .Ofertas {
       justify-content: center;
       align-items: center;
       gap: 10px; }
+      main .Ofertas .carouselOfertas .glider-contain .glider .card .cardContenido img {
+        width: 20vw;
+        height: auto; }
   main .Ofertas .botonOfertas {
     display: flex;
     justify-content: end; }
@@ -180,29 +179,23 @@ main .OfertasO {
   justify-items: center;
   gap: 50px;
   padding: 50px 133px; }
-  main .OfertasO .cardO {
+  main .OfertasO .cardContenido {
     background-color: #C5793D;
-    /*width: 15vw;
-            height: 20vw;*/
     box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    main .OfertasO .cardO .cardContenido {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-      padding: 5px 10px; }
-      main .OfertasO .cardO .cardContenido p {
-        font-weight: 400;
-        font-size: 26px;
-        color: #FFFFFF; }
-      main .OfertasO .cardO .cardContenido .imgCard img {
-        width: 12vw;
-        height: auto; }
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px; }
+    main .OfertasO .cardContenido p {
+      font-weight: 400;
+      font-size: 15px;
+      color: #FFFFFF; }
+    main .OfertasO .cardContenido .imgCard img {
+      width: 12vw;
+      height: auto; }
 
 main .textQuienesSomos {
   padding: 150px 87px;
@@ -376,9 +369,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 16px; }
-    main .OfertasO .cardO .cardContenido p {
+    main .OfertasO .cardContenido p {
       font-size: 15px; }
-    main .OfertasO .cardO .cardContenido .imgCard img {
+    main .OfertasO .cardContenido .imgCard img {
       width: 130px;
       height: auto; }
   main .textQuienesSomos {
@@ -475,9 +468,9 @@ footer {
   main .OfertasO {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-    main .OfertasO .cardO .cardContenido p {
+    main .OfertasO .cardContenido p {
       font-size: 15px; }
-    main .OfertasO .cardO .cardContenido .imgCard img {
+    main .OfertasO .cardContenido .imgCard img {
       width: 130px;
       height: auto; }
   main .carouselMarcas {
@@ -577,9 +570,9 @@ footer {
   main .OfertasO {
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
-    main .OfertasO .cardO .cardContenido p {
+    main .OfertasO .cardContenido p {
       font-size: 15px; }
-    main .OfertasO .cardO .cardContenido .imgCard img {
+    main .OfertasO .cardContenido .imgCard img {
       width: 130px;
       height: auto; }
   main .carouselMarcas {

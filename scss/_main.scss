@@ -102,6 +102,10 @@ main {
                             justify-content: center;
                             align-items: center;
                             gap: 10px;
+                            img{
+                                width: 20vw;
+                                height: auto;
+                            }
                         }
                     }
                 }
@@ -206,16 +210,10 @@ main {
         justify-items: center;
         gap: 50px;
         padding: 50px 133px;
-        .cardO{
-            background-color: $marronOscuro;
-            /*width: 15vw;
-            height: 20vw;*/
+            .cardContenido{
+                background-color: $marronOscuro;
             box-shadow: 6px 9px 7px rgba(0, 0, 0, 0.25);
             border-radius: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .cardContenido{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -224,7 +222,7 @@ main {
                 padding: 5px 10px;
                     p{
                         font-weight: 400;
-                        font-size: 26px;  
+                        font-size: 15px;  
                         color: #FFFFFF;  
                     }
                     .imgCard{
@@ -234,7 +232,6 @@ main {
                     }
                 }
             }    
-        }
     }
 
 
